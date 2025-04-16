@@ -118,7 +118,8 @@ runs:
       run: |
         echo "::group::Installing rich-codex"
         sudo apt install fonts-firacode
-        pip install "rich-codex[cairo]"
+        pip install -U uv
+        uv pip install --system "rich-codex[cairo]"
         echo "::endgroup::"
       shell: bash
 
