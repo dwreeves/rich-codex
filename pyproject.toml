@@ -2,14 +2,13 @@
 name = "rich-codex"
 description = "Generate rich images for the GitHub Action 'rich-codex'"
 readme = "README.md"
-license = { file = "LICENSE" }
+license = "MIT"
 maintainers = [{ name = "Phil Ewels", email = "phil@ewels.co.uk" }]
 authors = [{ name = "Phil Ewels", email = "phil@ewels.co.uk" }]
 requires-python = ">=3.7"
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3 :: Only",
@@ -55,6 +54,12 @@ requires = [
 
 [tool.setuptools.dynamic]
 version = { attr = "rich_codex.__version__" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+rich_codex = ["config-schema.yml"]
 
 [tool.black]
 line-length=120
