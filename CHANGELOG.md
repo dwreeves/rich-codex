@@ -1,5 +1,9 @@
 # Changelog: rich-codex
 
+## Version 1.2.11 (2025-04-16)
+
+- 🐛 Fix validation error ([#55](https://github.com/ewels/rich-codex/pull/55))
+
 ## Version 1.2.10 (2025-03-14)
 
 - 🐛 Fix missing required argument ([#53](https://github.com/ewels/rich-codex/pull/53))
